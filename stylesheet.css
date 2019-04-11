@@ -24,11 +24,6 @@ ul.topnav {
 }
 
 ul.topnav li {
-	margin: 5px;
-	padding: 5px;
-	background-color: #0EBDE9;
-	border: 2px solid #C10054;
-	border-radius: 10px;
 	float: left;
 }
 
@@ -45,22 +40,6 @@ ul.topnav li a:hover:not(.active) {background-color: #111;}
 @media screen and (max-width: 600px) {
 	ul.topnav li.right, 
 	ul.topnav li {float: none;}
-}
-
-a{
-	text-decoration: none;
-}
-
-a:link {
-	color: red;
-}
-
- a:active {
-	background-color: yellow;
-}
-
-li:hover {
-	background-color: green;
 }
 
 article{
