@@ -59,7 +59,7 @@ header {
 	}
 }
 
-article{
+.article{
 	background-color: rgb(135, 206, 250);
 	margin: 5px 10%;
 	padding: 10px;
