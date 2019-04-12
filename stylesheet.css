@@ -68,7 +68,9 @@ header {
 	overflow: scroll;
 }
 .footer {
+	display: block;
 	position: absolute;
+	margin: 5px 10%;
 	bottom: 0;
 	width: 100%;
 	background-color: rgb(135, 206, 250);
