@@ -4,7 +4,7 @@ body{
 	overflow: hidden;
 }
 
-header {
+.header {
 	position: relative;
 	height: 100px;
 	text-align: center;
@@ -60,6 +60,7 @@ header {
 }
 
 .article{
+	position: relative;
 	background-color: rgb(135, 206, 250);
 	margin: 5px 10%;
 	margin-bottom: 10%;
@@ -69,7 +70,7 @@ header {
 }
 .footer {
 	display: block;
-	position: absolute;
+	position: relative;
 	margin: 5px 10%;
 	bottom: 0;
 	width: 100%;
