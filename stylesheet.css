@@ -38,7 +38,6 @@ ul.topnav li a {
 ul.topnav li a:hover:not(.active) {background-color: #111;}
 
 @media screen and (max-width: 600px) {
-	ul.topnav li.right, 
 	ul.topnav li {float: none;}
 }
 
