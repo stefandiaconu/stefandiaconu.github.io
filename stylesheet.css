@@ -66,10 +66,12 @@ article{
 	height: 500px;
 	overflow: scroll;
 }
-
-footer {
+.footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
-}
+	background-color: rgb(135, 206, 250);
+	font-size: 12px;
+	padding: 15px;
+  }
 
