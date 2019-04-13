@@ -1,11 +1,10 @@
 body{
 	font-family: "Times New Roman", Aerials, sans-serif;
 	background: rgb(135, 206, 250);
-	overflow: hidden;
 	position: relative;
 	overflow: auto;
 	margin: 0 auto;
-	height: 100vh;
+	height: 100%;
 }
 
 .header {
@@ -73,7 +72,6 @@ body{
 	background-color: rgb(135, 206, 250);
 	margin: 5px 10%;
 	margin-bottom: 10%;
-	height: 100vh;
 }
 
 .footer {
