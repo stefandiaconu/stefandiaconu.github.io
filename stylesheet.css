@@ -5,6 +5,7 @@ body{
 	position: relative;
 	overflow: auto;
 	margin: 0 auto;
+	height: 100vh;
 }
 
 .header {
@@ -72,6 +73,7 @@ body{
 	background-color: rgb(135, 206, 250);
 	margin: 5px 10%;
 	margin-bottom: 10%;
+	height: 100vh;
 }
 
 .footer {
