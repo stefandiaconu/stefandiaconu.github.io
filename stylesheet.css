@@ -35,10 +35,6 @@ body{
 	text-decoration: none;
 	font-size: 17px;
 }
-
-#topnavmargin{
-	margin-left: 10%;
-}
   
 .topnav a:hover {
 	background-color: #ddd;
