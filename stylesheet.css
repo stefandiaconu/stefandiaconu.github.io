@@ -1,10 +1,11 @@
 html, body{
 	font-family: "Times New Roman", Aerials, sans-serif;
 	background: rgb(135, 206, 250);
-	position: relative;
 	overflow: auto;
 	margin: 0 auto;
 	height: 100%;
+	width: 100%;
+	display: table;
 }
 
 .header {
@@ -72,17 +73,14 @@ html, body{
 	background-color: rgb(135, 206, 250);
 	margin: 5px 10%;
 	padding-bottom: 50px;
+	height: auto;
 }
 
 .footer {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
+	display: table-row;
 	background-color: rgb(51, 51, 51);
 	text-align: left;
-	padding: 5px;
-	margin-top: auto;
+	height: 50px;
 }
 
 #footer_text{
