@@ -90,7 +90,11 @@ html, body{
 
 .social{
 	float: left;
-	padding-top: 10px;
+	margin: 10px;
+}
+
+.social a{
+	margin: 10px;
 }
 
 #footer_text{
