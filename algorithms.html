@@ -7,18 +7,19 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<header>
-		<h1>Stefan Diaconu e-portofolio</h1>
-	</header>
-	<nav>
-		<ul>
-			<li><a href="index.html" aria-haspopup="true">Home</a></li>
-			<li><a href="university.html" aria-haspopup="true">University</a></li>
-			<li><a href="personaldevelopment.html" aria-haspopup="true">Personal Development</a></li>
-			<li><a href="hobbies.html"aria-haspopup="true">Hobbies</a></li>
-		</ul>
-	</nav>
-	<article>
+	<div class="header">
+		<h1><a href="index.html">Stefan Diaconu</a></h1>
+	</div>
+	<div class="topnav" id="myTopnav">
+		<a href="bio.html" aria-haspopup="true" id="topnavmargin">Bio</a>
+		<a href="university.html" aria-haspopup="true">University</a>
+		<a href="personaldevelopment.html" aria-haspopup="true">Personal Development</a>
+		<a href="hobbies.html"aria-haspopup="true">Hobbies</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fa fa-bars"></i>
+		</a>
+	</div>
+	<div class="div">
 	<h1>Computer Science</h1>
 		<p>The focus of this degree is on the theoretical foundations of computing.
 		The course encourages a general and abstract understanding of the underlying principles
@@ -47,9 +48,8 @@
             module abstraction. Dynamic data structures: pointers linked lists graphs and trees. Object oriented: 
             design implementation and use. Application implementation and component reuse. Algorithms: sorting searching 
             and graph traversal. Basic complexity issues: time and space complexity. Software development techniques.</p>
-	</article>
-	<footer>
-	<p>All rights reserved</p>
-	</footer>
+	</div>
+	<div class="footer"><p id="footer_text">&copy All rights reserved</p></div>
+	<script src="script.js"></script>
 </body>
 </html>
