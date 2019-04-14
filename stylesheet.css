@@ -88,6 +88,11 @@ html, body{
 	height: 50px;
 }
 
+.social{
+	float: left;
+	padding: 10px;
+}
+
 #footer_text{
 	color: white;
 	margin-left: 10%;
