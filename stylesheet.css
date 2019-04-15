@@ -1,11 +1,11 @@
-html, body{
+body{
 	font-family: "Times New Roman", Aerials, sans-serif;
 	background: rgb(135, 206, 250);
 	overflow: auto;
 	margin: 0 auto;
-	height: 100%;
-	width: 100%;
-	display: table;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
 }
 
 .header {
@@ -20,12 +20,6 @@ html, body{
 .header a{
 	text-decoration: none;
 	color: black;
-}
-
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
 }
 
 .topnav {
@@ -79,13 +73,15 @@ html, body{
 	margin: 5px 10%;
 	padding-bottom: 50px;
 	height: auto;
+	flex: 1;
 }
 
 .footer {
-	display: table-row;
 	background-color: rgb(51, 51, 51);
 	text-align: left;
-	height: 50px;
+	height: 60px;
+	bottom: 0;
+	width: 100%;
 }
 
 .social{
@@ -97,8 +93,14 @@ html, body{
 	padding: 10px;
 }
 
-#footer_text{
-	color: white;
-	margin-left: 10%;
+.yearone1{
+	display: none;
 }
 
+.yeartwo2{
+	display: none;
+}
+
+.yearthree3{
+	display: none;
+}
