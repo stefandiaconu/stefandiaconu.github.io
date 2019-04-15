@@ -89,16 +89,16 @@ html, body{
 }
 
 .social{
-	float: left;
 	margin: 10px;
 }
 
-.social a{
-	padding: 10px;
+.social ol li{
+	display: inline-block;
+	padding-left: 10px;
 }
 
 #footer_text{
 	color: white;
-	margin-left: 10%;
+	margin-right: 10%;
 }
 
