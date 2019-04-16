@@ -116,6 +116,10 @@ body{
 	margin: 10px;
 }
 
+.social a{
+	padding: 10px;
+}
+
 .firstyear1, .secondyear2, .thirdyear3 {
 	background-color: rgba(180, 180, 180, 0.2);
 	font-size: 16px;
@@ -134,10 +138,15 @@ body{
 	transform: translateY(4px);
 }
 
-.social a{
-	padding: 10px;
-}
-
 .yearone1, .yeartwo2, .yearthree3{
 	display: none;
+}
+
+.sport, .music, .travel {
+	overflow: auto;
+	white-space: nowrap;
+}
+
+.sport1 img, .music1 img, .travel1 img {
+	display: inline-block;
 }
