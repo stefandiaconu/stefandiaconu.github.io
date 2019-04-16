@@ -80,6 +80,29 @@ body{
 	display: inline;
 }
 
+.collapsible {
+	background-color: #777;
+	color: white;
+	cursor: pointer;
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+
+.active, .collapsible:hover {
+	background-color: #555;
+}  
+
+.content {
+	padding: 0 18px;
+	display: none;
+	overflow: hidden;
+	background-color: #f1f1f1;
+}
+
 .footer {
 	background-color: rgb(51, 51, 51);
 	text-align: left;
@@ -94,7 +117,7 @@ body{
 }
 
 .firstyear1, .secondyear2, .thirdyear3 {
-	background-color: rgba(180, 180, 180, 0.541);
+	background-color: rgba(180, 180, 180, 0.2);
 	font-size: 16px;
 	border-radius: 5px;
 	opacity: 0.6;
