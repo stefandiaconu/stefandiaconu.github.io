@@ -150,3 +150,7 @@ body{
 .sport1 img, .music1 img, .travel1 img {
 	display: inline-block;
 }
+
+.hHeader {
+	position: fixed;
+}
