@@ -145,8 +145,18 @@ body{
 .sport, .music, .travel {
 	overflow: auto;
 	white-space: nowrap;
+	margin: 10px 50px;
+	height: 130px;
 }
 
 .sport1 img, .music1 img, .travel1 img {
 	display: inline-block;
+	transition: 1s;
+	padding: 10px;
+	width: 140px;
+}
+
+.sport1 img:hover, .music1 img:hover, .travel1 img:hover {
+	filter: grayscale(100%);
+	transform: scale(1.1);
 }
