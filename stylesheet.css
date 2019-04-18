@@ -126,9 +126,9 @@ body{
 .column {
 	float: left;
 	width: 33.33%;
-	padding: 50px;
+	padding: 20px;
 	text-align: center;
-	font-size: 25px;
+	font-size: 20px;
 	cursor: pointer;
 	background-color: rgb(135, 206, 250);
 	margin-bottom: 20px;
