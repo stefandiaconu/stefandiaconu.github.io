@@ -24,23 +24,23 @@
 		<h2>Sport</h2>
 		<div class="sport">
 			<div class="sport1">
-				<a href="images/sport1.jpg"><img src="images/sport1.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/sport2.jpg"><img src="images/sport2.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/sport3.jpg"><img src="images/sport3.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/sport1.jpg"><img src="images/sport1.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/sport2.jpg"><img src="images/sport2.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/sport3.jpg"><img src="images/sport3.jpg" alt="No content" width="100px" height="100px"/></a>
+				<img src="images/sport1.jpg" alt="No content" width="100px" height="100px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"/>
+				<img src="images/sport2.jpg" alt="No content" width="100px" height="100px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"/>
+				<img src="images/sport3.jpg" alt="No content" width="100px" height="100px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"/>
+				<img src="images/sport1.jpg" alt="No content" width="100px" height="100px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"/>
+				<img src="images/sport2.jpg" alt="No content" width="100px" height="100px" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"/>
+				<img src="images/sport3.jpg" alt="No content" width="100px" height="100px" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"/>
 			</div>
 		</div>
 		<h2 >Music</h2>
 		<div class="music">
 			<div class="music1">
-				<a href="images/sport1.jpg"><img src="images/sport1.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/sport2.jpg"><img src="images/sport2.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/sport3.jpg"><img src="images/sport3.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/sport1.jpg"><img src="images/sport1.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/sport2.jpg"><img src="images/sport2.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/sport3.jpg"><img src="images/sport3.jpg" alt="No content" width="100px" height="100px"/></a>
+				<a href="images/music1.jpg"><img src="images/music1.jpg" alt="No content" width="100px" height="100px"/></a>
+				<a href="images/music2.jpg"><img src="images/music2.jpg" alt="No content" width="100px" height="100px"/></a>
+				<a href="images/music3.jpg"><img src="images/music3.jpg" alt="No content" width="100px" height="100px"/></a>
+				<a href="images/music1.jpg"><img src="images/music1.jpg" alt="No content" width="100px" height="100px"/></a>
+				<a href="images/music2.jpg"><img src="images/music2.jpg" alt="No content" width="100px" height="100px"/></a>
+				<a href="images/music3.jpg"><img src="images/music3.jpg" alt="No content" width="100px" height="100px"/></a>
 			</div>
 		</div>
 		<h2>Travel</h2>
@@ -54,6 +54,71 @@
 				<a href="images/trav3.jpg"><img src="images/trav3.jpg" alt="No content" width="100px" height="100px"/></a>
 			</div>
 		</div>
+		
+		<!-- Start of image galerry -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		  
+			  <div class="mySlides">
+				<div class="numbertext">1 / 6</div>
+				<img src="images/sport1.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">2 / 6</div>
+				<img src="images/sport2.jpg" style="width:100%">
+			  </div>
+		  
+			  <div class="mySlides">
+				<div class="numbertext">3 / 6</div>
+				<img src="images/sport3.jpg" style="width:100%">
+			  </div>
+			  
+			  <div class="mySlides">
+				<div class="numbertext">4 / 6</div>
+				<img src="images/sport1.jpg" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+				<div class="numbertext">5 / 6</div>
+				<img src="images/sport2.jpg" style="width:100%">
+			  </div>
+
+			  <div class="mySlides">
+				<div class="numbertext">6 / 6</div>
+				<img src="images/sport3.jpg" style="width:100%">
+			  </div>
+			  
+			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		  
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+		  
+			  <div class="sport1">
+				<img class="demo cursor" src="images/sport1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Wembley Stadium">
+			  </div>
+			  <div class="sport1">
+				<img class="demo cursor" src="images/sport2.jpg" style="width:100%" onclick="currentSlide(2)" alt="O2 Arena London">
+			  </div>
+			  <div class="sport1">
+				<img class="demo cursor" src="images/sport3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Wembley Stadium">
+			  </div>
+			  <div class="sport1">
+				<img class="demo cursor" src="images/sport1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Wembley Stadium">
+			  </div>
+			  <div class="sport1">
+				<img class="demo cursor" src="images/sport2.jpg" style="width:100%" onclick="currentSlide(5)" alt="O2 Arena London">
+			  </div>
+			  <div class="sport1">
+				<img class="demo cursor" src="images/sport3.jpg" style="width:100%" onclick="currentSlide(6)" alt="Wembley Stadium">
+			  </div>
+			</div>
+		</div>
+		<!-- End of image galerry -->
+
 	</div>
 	<div class="footer">
 		<div class="social">
@@ -62,8 +127,8 @@
 			<a href="https://github.com/stefandiaconu" target="blank"><img src="images/github.png" width="30px" height="30px" alt="Twitter icon"></a>
 			<a href="https://www.linkedin.com/in/stefan-diaconu-183bb5108/" target="blank"><img src="images/linkedin.png" width="30px" height="30px" alt="Twitter icon"></a>
 			<a href="mailto:stefan.diaconu@outlook.com" target="blank"><img src="images/outlook.png" width="30px" height="30px" alt="Twitter icon"></a>
-			</div>
 		</div>
+	</div>
 	<script src="script.js"></script>
 </body>
 </html>
