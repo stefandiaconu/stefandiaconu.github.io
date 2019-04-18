@@ -29,13 +29,13 @@
 		information systems and databases, as well as more specialised areas such as forensic computing,
 		artificial intelligence, computer mathematics and software engineering. In your final year,
 		you will study cutting-edge topics with guidance from research leaders and undertake a large-scale project</p>
-		<ul id="buttons">
-			<li><button class="firstyear1" id="firstyear" onclick="year1Function()"><p>Year 1</p></button></li>
-			<li><button class="secondyear2" id="secondyear" onclick="year2Function()"><p>Year 2</p></button></li>
-			<li><button class="thirdyear3" id="thirdyear" onclick="year3Function()"><p>Year 3</p></button></li>
-		</ul>
-		<div class="yearone1" id="yearone">
-			<h2>Year 1</h2>
+		<div class="column" onclick="openTab('b1');">Year 1</div>
+		<div class="column" onclick="openTab('b2');">Year 2</div>
+		<div class="column" onclick="openTab('b3');">Year 3</div>
+
+		<!-- Full-width columns: (hidden by default) -->
+		<div id="b1" class="containerTab">
+			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 			<p>In Year 1 you will study a core set of skills including programming, web design and development,
 			information systems and databases, computer hardware and computing logic and mathematics.
 			You will learn a particular style of programming so that you can learn similar languages without
@@ -104,9 +104,10 @@
 					</ul>
 				</p>
 			</div>
-		</div>
-		<div class="yeartwo2" id="yeartwo">
-			<h2>Year 2</h2>
+  		</div>
+  
+  		<div id="b2" class="containerTab">
+			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 			<p>Your second year will build on your knowledge, with core units typically exploring areas 
 				such as algorithms and data structures, advanced programming, and computer networks and operating systems.</p>
 			<h3>Core Units</h3>
@@ -157,14 +158,15 @@
 					Implementation: practical application and implementation of concepts studied above. Use of Integrated Development Environment (IDE). 
 					Implementation of a UML diagram. Documentation and coding standards. Case studies.</p>
 			</div>
-		</div>
-		<div class="yearthree3" id="yearthree">
-			<h2>Year 3</h2>
+  		</div>
+  
+  		<div id="b3" class="containerTab">
+			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 			<p>In your third year, you will have the choice to either go on a placement, where you'll work for a year in industry, 
-			or continue directly into your final year of study.</p>
+				or continue directly into your final year of study.</p>
 			<p>In your final year, you will typically study units including artificial intelligence and principles and design of 
-			coding languages, and, supervised by a member of academic staff, you will complete a technical project in line 
-			with your own interests.</p>
+				coding languages, and, supervised by a member of academic staff, you will complete a technical project in line 
+				with your own interests.</p>
 			<h3>Core Units</h3>
 			<button class="collapsible">Project</button>
 			<div class="content">
@@ -217,7 +219,7 @@
 					cryptographic methods and security protocols. It includes an overview of security, cryptography and encryption 
 					algorithms e.g. DES, RSA, AES. Access control and multilevel security, internet security protocols and firewalls.</p>
 			</div>
-		</div>
+  		</div>
 	</div>
 	<div class="footer">
 		<div class="social">
