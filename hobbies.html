@@ -22,103 +22,80 @@
 	</div>
 	<div class="div">
 		<h2>Sport</h2>
-		<div class="sport">
-			<div class="sport1">
-				<img src="images/sport1.jpg" alt="No content" width="100px" height="100px" onclick="openModal();currentSlide(1)" class="hover-shadow cursor"/>
-				<img src="images/sport2.jpg" alt="No content" width="100px" height="100px" onclick="openModal();currentSlide(2)" class="hover-shadow cursor"/>
-				<img src="images/sport3.jpg" alt="No content" width="100px" height="100px" onclick="openModal();currentSlide(3)" class="hover-shadow cursor"/>
-				<img src="images/sport1.jpg" alt="No content" width="100px" height="100px" onclick="openModal();currentSlide(4)" class="hover-shadow cursor"/>
-				<img src="images/sport2.jpg" alt="No content" width="100px" height="100px" onclick="openModal();currentSlide(5)" class="hover-shadow cursor"/>
-				<img src="images/sport3.jpg" alt="No content" width="100px" height="100px" onclick="openModal();currentSlide(6)" class="hover-shadow cursor"/>
+		<div class="slideshow-container">
+			<div class="sportSlides">
+				<img src="images/sport1.jpg" style="width:100%">
 			</div>
-		</div>
-		<h2 >Music</h2>
-		<div class="music">
-			<div class="music1">
-				<a href="images/music1.jpg"><img src="images/music1.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/music2.jpg"><img src="images/music2.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/music3.jpg"><img src="images/music3.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/music1.jpg"><img src="images/music1.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/music2.jpg"><img src="images/music2.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/music3.jpg"><img src="images/music3.jpg" alt="No content" width="100px" height="100px"/></a>
+			<div class="sportSlides">
+				<img src="images/sport2.jpg" style="width:100%">
 			</div>
-		</div>
-		<h2>Travel</h2>
-		<div class="travel">
-			<div class="travel1">
-				<a href="images/trav1.jpg"><img src="images/trav1.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/trav2.jpg"><img src="images/trav2.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/trav3.jpg"><img src="images/trav3.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/trav1.jpg"><img src="images/sport1.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/trav2.jpg"><img src="images/trav2.jpg" alt="No content" width="100px" height="100px"/></a>
-				<a href="images/trav3.jpg"><img src="images/trav3.jpg" alt="No content" width="100px" height="100px"/></a>
+			<div class="sportSlides">
+				<img src="images/sport3.jpg" style="width:100%">
 			</div>
+			<div class="sportSlides">
+					<img src="images/sport4.jpg" style="width:100%">
+			</div>
+			<div class="sportSlides">
+				<img src="images/sport5.jpg" style="width:100%">
+			</div>
+			<div class="sportSlides">
+				<img src="images/sport6.jpg" style="width:100%">
+			</div>
+		
+			<a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
 		</div>
 		
-		<!-- Start of image galerry -->
-		<div id="myModal" class="modal">
-			<span class="close cursor" onclick="closeModal()">&times;</span>
-			<div class="modal-content">
-		  
-			  <div class="mySlides">
-				<div class="numbertext">1 / 6</div>
-				<img src="images/sport1.jpg" style="width:100%">
-			  </div>
-		  
-			  <div class="mySlides">
-				<div class="numbertext">2 / 6</div>
-				<img src="images/sport2.jpg" style="width:100%">
-			  </div>
-		  
-			  <div class="mySlides">
-				<div class="numbertext">3 / 6</div>
-				<img src="images/sport3.jpg" style="width:100%">
-			  </div>
-			  
-			  <div class="mySlides">
-				<div class="numbertext">4 / 6</div>
-				<img src="images/sport1.jpg" style="width:100%">
-			  </div>
-
-			  <div class="mySlides">
-				<div class="numbertext">5 / 6</div>
-				<img src="images/sport2.jpg" style="width:100%">
-			  </div>
-
-			  <div class="mySlides">
-				<div class="numbertext">6 / 6</div>
-				<img src="images/sport3.jpg" style="width:100%">
-			  </div>
-			  
-			  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-		  
-			  <div class="caption-container">
-				<p id="caption"></p>
-			  </div>
-		  
-			  <div class="sport1">
-				<img class="demo cursor" src="images/sport1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Wembley Stadium">
-			  </div>
-			  <div class="sport1">
-				<img class="demo cursor" src="images/sport2.jpg" style="width:100%" onclick="currentSlide(2)" alt="O2 Arena London">
-			  </div>
-			  <div class="sport1">
-				<img class="demo cursor" src="images/sport3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Wembley Stadium">
-			  </div>
-			  <div class="sport1">
-				<img class="demo cursor" src="images/sport1.jpg" style="width:100%" onclick="currentSlide(4)" alt="Wembley Stadium">
-			  </div>
-			  <div class="sport1">
-				<img class="demo cursor" src="images/sport2.jpg" style="width:100%" onclick="currentSlide(5)" alt="O2 Arena London">
-			  </div>
-			  <div class="sport1">
-				<img class="demo cursor" src="images/sport3.jpg" style="width:100%" onclick="currentSlide(6)" alt="Wembley Stadium">
-			  </div>
+		<h2 >Music</h2>
+		<div class="slideshow-container">
+			<div class="musicSlides">
+				<img src="images/music1.jpg" style="width:100%">
 			</div>
+			<div class="musicSlides">
+				<img src="images/music2.jpg" style="width:100%">
+			</div>
+			<div class="musicSlides">
+				<img src="images/music3.jpg" style="width:100%">
+			</div>
+			<div class="musicSlides">
+				<img src="images/music4.jpg" style="width:100%">
+			</div>
+			<div class="musicSlides">
+				<img src="images/music5.jpg" style="width:100%">
+			</div>
+			<div class="musicSlides">
+				<img src="images/music6.jpg" style="width:100%">
+			</div>
+		
+			<a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
 		</div>
-		<!-- End of image galerry -->
 
+		<h2 >Travel</h2>
+		<div class="slideshow-container">
+			<div class="travelSlides">
+				<img src="images/trav1.jpg" style="width:100%">
+			</div>
+			<div class="travelSlides">
+				<img src="images/trav2.jpg" style="width:100%">
+			</div>
+			<div class="travelSlides">
+				<img src="images/trav3.jpg" style="width:100%">
+			</div>
+			<div class="travelSlides">
+				<img src="images/trav4.jpg" style="width:100%">
+			</div>
+			<div class="travelSlides">
+				<img src="images/trav5.jpg" style="width:100%">
+			</div>
+			<div class="travelSlides">
+				<img src="images/trav6.jpg" style="width:100%">
+			</div>
+		
+			<a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+		</div> <!-- End of image galerry -->
+		
 	</div>
 	<div class="footer">
 		<div class="social">

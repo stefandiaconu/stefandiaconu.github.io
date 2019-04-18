@@ -1,3 +1,4 @@
+/** Topnav function */
 function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -7,6 +8,7 @@ function myFunction() {
     }
 }
 
+/** University years function */
 function openTab(tabName) {
   var i, x;
   x = document.getElementsByClassName("containerTab");
@@ -16,6 +18,7 @@ function openTab(tabName) {
   document.getElementById(tabName).style.display = "block";
 }
 
+/** University units function */
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -31,43 +34,24 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-// ---------------------//
-// Create an image galerry
-//----------------------//
+/** Hobbies image galerry function */
+var slideIndex = [1,1,1];
+var slideId = ["sportSlides", "musicSlides", "travelSlides"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
 
-function openModal() {
-  document.getElementById('myModal').style.display = "block";
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
 }
 
-function closeModal() {
-  document.getElementById('myModal').style.display = "none";
-}
-
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
+function showSlides(n, no) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
   }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  x[slideIndex[no]-1].style.display = "block";  
 }
