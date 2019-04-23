@@ -193,3 +193,10 @@ img {vertical-align: middle;}
 	background-color: #f1f1f1;
 	color: black;
 }
+
+/* Canvas */
+canvas
+{
+	background-color:rgba(255,255,255);
+	border: 1px dashed;
+}

@@ -1,3 +1,30 @@
+/** Draw rectangles */
+window.addEventListener('load', drawRectangles);
+
+function drawRectangles()
+{
+	var canvas=document.getElementById('myCanvas');
+	var context=canvas.getContext('2d');
+
+	for (var i=0; i<100; i++)
+	{
+		var x = canvas.width*Math.random();
+		var y = canvas.height*Math.random();
+		var width = canvas.width*Math.random();
+		var height = canvas.height*Math.random();
+		context.strokeRect(x, y, width, height);
+		var color = random_rgb();
+		context.strokeStyle = color;
+	}
+
+}
+
+function random_rgb()
+{
+	var o = Math.round, r = Math.random, s = 255;
+	return 'rgb(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ')';
+}
+
 /** Topnav function */
 function myFunction() {
     var x = document.getElementById("myTopnav");
