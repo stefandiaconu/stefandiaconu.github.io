@@ -292,7 +292,7 @@ canvas
 .welcome {
 	position: relative;
 	display: flex;
-	font-size: 100px;
+	top: 40%;
 	justify-content: center;
 	align-items: center;
 	animation: fadein 5s linear forwards;
