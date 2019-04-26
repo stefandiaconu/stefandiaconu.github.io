@@ -201,3 +201,110 @@ canvas
 	height: 100%;
 	margin: 10px;
 }
+
+/* Tax calculator style*/
+.taxCalculator {
+	display: inline;
+}
+
+/* Index page */
+.loading {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 15;
+	animation: fadeout 4s linear forwards;
+}
+
+@keyframes fadeout {
+	0%,91%
+	{
+		opacity: 1;
+		visibility: visible;
+	}
+	100%
+	{
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+.loading h2 {
+	color: #000;
+}
+
+.loading .bar {
+	position: relative;
+	width: 400px;
+	height: 40px;
+	background: transparent;
+	margin: 0 20px;
+	border: 2px solid #000;
+	box-sizing: border-box;
+}
+
+.loading .bar:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	transform-origin: left;
+	animation: animate 3s linear forwards;
+}
+
+.loading .bar:after {
+	content: 'Loading...';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	font-weight: 800;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	text-align: center;
+	line-height: 36px;
+	color: #fff;
+	font-size: 20px;
+	mix-blend-mode: difference;
+}
+
+@keyframes animate {
+	0%
+	{
+		transform: scaleX(0);
+	}
+	100%
+	{
+		transform: scaleX(1);
+	}
+}
+
+.welcome {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: fadein 5s linear forwards;
+}
+
+@keyframes fadein {
+	0%,95%
+	{
+		opacity: 0;
+		visibility: hidden;
+	}
+	100%
+	{
+		opacity: 1;
+		visibility: visible;
+	}
+}
