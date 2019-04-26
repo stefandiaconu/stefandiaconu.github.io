@@ -24,28 +24,65 @@
 		<button class="collapsible">Income Tax Calculator</button>
 		<div class="content">
 			<table>
-				<td>Your details</td>
+				<th>Your details</th>
 				<tr>
-					<td>Gross (pre-tax) income</td>
+					<th><label>Gross (pre-tax) income</label></th>
 					<td>
 						<input type="text" value="0">
+						<label>Per</label>
+						<select>
+								<option value="1" selected="">Year</option>
+								<option value="2">Month</option>
+								<option value="3">4 weeks</option>
+								<option value="4">2 weeks</option>
+								<option value="5">week</option>
+								<option value="6">Day</option>
+								<option value="7">Hour</option>
+							</select>
 					</td>
-					
 				</tr>
 				<tr>
-					<td>Tax Year</td>
-					<td><p>Unknown</p></td>
+					<th>Tax Year</th>
 					<td>
 						<select>
-							<option value="1" selected="">Year</option>
-							<option value="2">Month</option>
-							<option value="3">4 weeks</option>
-							<option value="4">2 weeks</option>
-							<option value="5">week</option>
-							<option value="6">Day</option>
-							<option value="7">Hour</option>
+							<option value="1" selected="">2019/2020</option>
+							<option value="2">2018/2019</option>
+							<option value="3">2017/2018</option>
+							<option value="4">2016/2017</option>
+							<option value="5">2015/2016</option>
+							<option value="6">2014/2015</option>
+							<option value="7">2013/2014</option>
+							<option value="8">2012/2013</option>
+							<option value="9">2011/2012</option>
+							<option value="10">2010/2011</option>
+						</select>
+						<label>Unknown</label>
+					</td>
+				</tr>
+				<tr>
+					<th>Tick which apply</th>
+					<td>
+						<label>Maried</label><input type="checkbox">
+						<label>Blind</label><input type="checkbox">
+						<label>No NIC's</label><input type="checkbox">
+					</td>
+				</tr>
+				<tr>
+					<th><label>Student Load?</label></th>
+					<td>
+						<select>
+							<option value="1" selected="">No</option>
+							<option value="2">Yes</option>
 						</select>
 					</td>
+				</tr>
+				<tr>
+					<th><label>Date of birth</label></th>
+					<td><input type="date"></td>
+				</tr>
+				<tr>
+					<th><label>Pension contribution</label></th>
+					<td><input type="date"></td>
 				</tr>
 			</table>
 		</div>
